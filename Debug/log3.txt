@@ -1,0 +1,1849 @@
+[sys]      SESSION: Thu Apr 09 12:30:43 2015
+[sys]      GRMON version: v2.0.62 eval version
+[sys]      OS: Windows
+[sys]      Command line: grmon -altjtag -u -nb -log log.txt
+[sys]      
+[sys]      GRMON2 LEON debug monitor v2.0.62 eval version
+[sys]      
+[sys]      Copyright (C) 2015 Cobham Gaisler - All rights reserved.
+[sys]      For latest updates, go to http://www.gaisler.com/
+[sys]      Comments or bug-reports to support@gaisler.com
+[sys]      
+[sys]      This eval version will expire on 18/09/2015
+[sys]      
+[sys]       JTAG chain (1): EP4SGX230(.|ES) 
+[usr1]     GRLIB build version: 4144
+[usr1]     Detected frequency:  99 MHz
+[usr1]     
+[usr1]     Component                            Vendor
+[usr1]     LEON3 SPARC V8 Processor             Cobham Gaisler
+[usr1]     LEON3 SPARC V8 Processor             Cobham Gaisler
+[usr1]     LEON3 SPARC V8 Processor             Cobham Gaisler
+[usr1]     LEON3 SPARC V8 Processor             Cobham Gaisler
+[usr1]     AHB Debug UART                       Cobham Gaisler
+[usr1]     JTAG Debug Link                      Cobham Gaisler
+[usr1]     LEON2 Memory Controller              European Space Agency
+[usr1]     AHB/APB Bridge                       Cobham Gaisler
+[usr1]     LEON3 Debug Support Unit             Cobham Gaisler
+[usr1]     Avalon-MM memory controller          Cobham Gaisler
+[usr1]     Unknown device                       Unknown vendor
+[usr1]     Generic UART                         Cobham Gaisler
+[usr1]     Multi-processor Interrupt Ctrl.      Cobham Gaisler
+[usr1]     Modular Timer Unit                   Cobham Gaisler
+[usr1]     General Purpose I/O port             Cobham Gaisler
+[usr1]     SPI Controller                       Cobham Gaisler
+[usr1]     AHB Status Register                  Cobham Gaisler
+[usr1]     
+[usr1]     Use command 'info sys' to print a detailed report of attached cores
+[usr1]     
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 99.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38431, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 99
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 99.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38431, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 99
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 99.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38431, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 99
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 99.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38431, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 99
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 99.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38431, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 99
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 99.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38431, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 99
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 99.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38431, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 99
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 99.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38431, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 99
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     grmon2> load image_bdx_sof.dsu 
+[usr1]     
+[usr1]     40000000 .stage2                      0B              [>               ]   0%
+[usr1]     40000000 .stage2                   10.0kB /  10.0kB   [===============>] 100%
+[usr1]     
+[usr1]     40004000 .vmlinux                     0B              [>               ]   0%
+[usr1]     40004000 .vmlinux                  24.0kB /   6.7MB   [>               ]   0%
+[usr1]     40004000 .vmlinux                  48.0kB /   6.7MB   [>               ]   0%
+[usr1]     40004000 .vmlinux                  72.0kB /   6.7MB   [>               ]   1%
+[usr1]     40004000 .vmlinux                  96.0kB /   6.7MB   [>               ]   1%
+[usr1]     40004000 .vmlinux                 120.0kB /   6.7MB   [>               ]   1%
+[usr1]     40004000 .vmlinux                 144.0kB /   6.7MB   [>               ]   2%
+[usr1]     40004000 .vmlinux                 168.0kB /   6.7MB   [>               ]   2%
+[usr1]     40004000 .vmlinux                 184.0kB /   6.7MB   [>               ]   2%
+[usr1]     40004000 .vmlinux                 208.0kB /   6.7MB   [>               ]   3%
+[usr1]     40004000 .vmlinux                 232.0kB /   6.7MB   [>               ]   3%
+[usr1]     40004000 .vmlinux                 256.0kB /   6.7MB   [>               ]   3%
+[usr1]     40004000 .vmlinux                 272.0kB /   6.7MB   [>               ]   3%
+[usr1]     40004000 .vmlinux                 296.0kB /   6.7MB   [>               ]   4%
+[usr1]     40004000 .vmlinux                 320.0kB /   6.7MB   [>               ]   4%
+[usr1]     40004000 .vmlinux                 344.0kB /   6.7MB   [>               ]   5%
+[usr1]     40004000 .vmlinux                 368.0kB /   6.7MB   [>               ]   5%
+[usr1]     40004000 .vmlinux                 392.0kB /   6.7MB   [>               ]   5%
+[usr1]     40004000 .vmlinux                 416.0kB /   6.7MB   [>               ]   6%
+[usr1]     40004000 .vmlinux                 440.0kB /   6.7MB   [>               ]   6%
+[usr1]     40004000 .vmlinux                 464.0kB /   6.7MB   [=>              ]   6%
+[usr1]     40004000 .vmlinux                 488.0kB /   6.7MB   [=>              ]   7%
+[usr1]     40004000 .vmlinux                 512.0kB /   6.7MB   [=>              ]   7%
+[usr1]     40004000 .vmlinux                 528.0kB /   6.7MB   [=>              ]   7%
+[usr1]     40004000 .vmlinux                 552.0kB /   6.7MB   [=>              ]   8%
+[usr1]     40004000 .vmlinux                 576.0kB /   6.7MB   [=>              ]   8%
+[usr1]     40004000 .vmlinux                 592.0kB /   6.7MB   [=>              ]   8%
+[usr1]     40004000 .vmlinux                 616.0kB /   6.7MB   [=>              ]   8%
+[usr1]     40004000 .vmlinux                 640.0kB /   6.7MB   [=>              ]   9%
+[usr1]     40004000 .vmlinux                 664.0kB /   6.7MB   [=>              ]   9%
+[usr1]     40004000 .vmlinux                 688.0kB /   6.7MB   [=>              ]  10%
+[usr1]     40004000 .vmlinux                 704.0kB /   6.7MB   [=>              ]  10%
+[usr1]     40004000 .vmlinux                 728.0kB /   6.7MB   [=>              ]  10%
+[usr1]     40004000 .vmlinux                 752.0kB /   6.7MB   [=>              ]  10%
+[usr1]     40004000 .vmlinux                 776.0kB /   6.7MB   [=>              ]  11%
+[usr1]     40004000 .vmlinux                 792.0kB /   6.7MB   [=>              ]  11%
+[usr1]     40004000 .vmlinux                 816.0kB /   6.7MB   [=>              ]  11%
+[usr1]     40004000 .vmlinux                 840.0kB /   6.7MB   [=>              ]  12%
+[usr1]     40004000 .vmlinux                 864.0kB /   6.7MB   [=>              ]  12%
+[usr1]     40004000 .vmlinux                 880.0kB /   6.7MB   [=>              ]  12%
+[usr1]     40004000 .vmlinux                 904.0kB /   6.7MB   [=>              ]  13%
+[usr1]     40004000 .vmlinux                 928.0kB /   6.7MB   [==>             ]  13%
+[usr1]     40004000 .vmlinux                 952.0kB /   6.7MB   [==>             ]  13%
+[usr1]     40004000 .vmlinux                 976.0kB /   6.7MB   [==>             ]  14%
+[usr1]     40004000 .vmlinux                1000.0kB /   6.7MB   [==>             ]  14%
+[usr1]     40004000 .vmlinux                   1.0MB /   6.7MB   [==>             ]  14%
+[usr1]     40004000 .vmlinux                   1.0MB /   6.7MB   [==>             ]  15%
+[usr1]     40004000 .vmlinux                   1.0MB /   6.7MB   [==>             ]  15%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.7MB   [==>             ]  15%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.7MB   [==>             ]  16%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.7MB   [==>             ]  16%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.7MB   [==>             ]  16%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.7MB   [==>             ]  17%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.7MB   [==>             ]  17%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.7MB   [==>             ]  17%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.7MB   [==>             ]  18%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.7MB   [==>             ]  18%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.7MB   [==>             ]  18%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.7MB   [==>             ]  19%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.7MB   [==>             ]  19%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.7MB   [==>             ]  19%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.7MB   [===>            ]  20%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.7MB   [===>            ]  20%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.7MB   [===>            ]  20%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.7MB   [===>            ]  21%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.7MB   [===>            ]  21%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.7MB   [===>            ]  21%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.7MB   [===>            ]  22%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.7MB   [===>            ]  22%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.7MB   [===>            ]  22%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.7MB   [===>            ]  23%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.7MB   [===>            ]  23%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.7MB   [===>            ]  23%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.7MB   [===>            ]  24%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.7MB   [===>            ]  24%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.7MB   [===>            ]  24%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.7MB   [===>            ]  25%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.7MB   [===>            ]  25%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.7MB   [===>            ]  25%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.7MB   [===>            ]  26%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.7MB   [===>            ]  26%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.7MB   [====>           ]  26%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.7MB   [====>           ]  27%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.7MB   [====>           ]  27%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.7MB   [====>           ]  28%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.7MB   [====>           ]  28%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.7MB   [====>           ]  28%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.7MB   [====>           ]  29%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.7MB   [====>           ]  29%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.7MB   [====>           ]  29%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.7MB   [====>           ]  30%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.7MB   [====>           ]  30%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.7MB   [====>           ]  30%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.7MB   [====>           ]  31%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.7MB   [====>           ]  31%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.7MB   [====>           ]  31%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.7MB   [====>           ]  32%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.7MB   [====>           ]  32%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.7MB   [====>           ]  32%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.7MB   [====>           ]  33%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.7MB   [=====>          ]  33%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.7MB   [=====>          ]  33%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.7MB   [=====>          ]  34%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.7MB   [=====>          ]  34%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.7MB   [=====>          ]  34%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.7MB   [=====>          ]  35%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.7MB   [=====>          ]  35%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.7MB   [=====>          ]  35%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.7MB   [=====>          ]  35%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.7MB   [=====>          ]  36%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.7MB   [=====>          ]  36%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.7MB   [=====>          ]  36%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.7MB   [=====>          ]  37%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.7MB   [=====>          ]  37%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.7MB   [=====>          ]  37%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.7MB   [=====>          ]  38%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.7MB   [=====>          ]  38%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.7MB   [=====>          ]  39%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.7MB   [=====>          ]  39%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.7MB   [=====>          ]  39%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.7MB   [======>         ]  40%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.7MB   [======>         ]  40%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.7MB   [======>         ]  40%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.7MB   [======>         ]  41%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.7MB   [======>         ]  41%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.7MB   [======>         ]  41%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.7MB   [======>         ]  42%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.7MB   [======>         ]  42%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.7MB   [======>         ]  42%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.7MB   [======>         ]  43%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.7MB   [======>         ]  43%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.7MB   [======>         ]  43%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.7MB   [======>         ]  44%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.7MB   [======>         ]  44%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.7MB   [======>         ]  44%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.7MB   [======>         ]  45%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.7MB   [======>         ]  45%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.7MB   [======>         ]  45%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.7MB   [======>         ]  46%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.7MB   [======>         ]  46%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.7MB   [=======>        ]  46%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.7MB   [=======>        ]  47%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.7MB   [=======>        ]  47%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.7MB   [=======>        ]  47%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.7MB   [=======>        ]  48%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.7MB   [=======>        ]  48%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.7MB   [=======>        ]  48%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.7MB   [=======>        ]  49%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.7MB   [=======>        ]  49%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.7MB   [=======>        ]  49%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.7MB   [=======>        ]  50%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.7MB   [=======>        ]  50%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.7MB   [=======>        ]  50%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.7MB   [=======>        ]  51%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.7MB   [=======>        ]  51%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.7MB   [=======>        ]  51%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.7MB   [=======>        ]  52%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.7MB   [=======>        ]  52%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.7MB   [=======>        ]  52%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.7MB   [=======>        ]  53%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.7MB   [========>       ]  53%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.7MB   [========>       ]  53%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.7MB   [========>       ]  54%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.7MB   [========>       ]  54%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.7MB   [========>       ]  54%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.7MB   [========>       ]  55%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.7MB   [========>       ]  55%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.7MB   [========>       ]  55%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.7MB   [========>       ]  56%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.7MB   [========>       ]  56%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.7MB   [========>       ]  56%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.7MB   [========>       ]  57%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.7MB   [========>       ]  57%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.7MB   [========>       ]  57%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.7MB   [========>       ]  58%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.7MB   [========>       ]  58%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.7MB   [========>       ]  58%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.7MB   [========>       ]  59%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.7MB   [========>       ]  59%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.7MB   [========>       ]  59%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.7MB   [=========>      ]  60%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.7MB   [=========>      ]  60%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.7MB   [=========>      ]  60%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.7MB   [=========>      ]  61%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.7MB   [=========>      ]  61%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.7MB   [=========>      ]  61%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.7MB   [=========>      ]  62%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.7MB   [=========>      ]  62%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.7MB   [=========>      ]  62%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.7MB   [=========>      ]  63%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.7MB   [=========>      ]  63%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.7MB   [=========>      ]  63%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.7MB   [=========>      ]  64%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.7MB   [=========>      ]  64%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.7MB   [=========>      ]  64%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.7MB   [=========>      ]  65%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.7MB   [=========>      ]  65%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.7MB   [=========>      ]  65%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.7MB   [=========>      ]  66%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.7MB   [=========>      ]  66%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.7MB   [==========>     ]  66%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.7MB   [==========>     ]  67%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.7MB   [==========>     ]  67%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.7MB   [==========>     ]  67%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.7MB   [==========>     ]  68%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.7MB   [==========>     ]  68%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.7MB   [==========>     ]  68%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.7MB   [==========>     ]  69%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.7MB   [==========>     ]  69%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.7MB   [==========>     ]  69%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.7MB   [==========>     ]  70%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.7MB   [==========>     ]  70%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.7MB   [==========>     ]  70%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.7MB   [==========>     ]  71%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.7MB   [==========>     ]  71%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.7MB   [==========>     ]  71%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.7MB   [==========>     ]  72%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.7MB   [==========>     ]  72%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.7MB   [==========>     ]  72%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.7MB   [==========>     ]  73%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.7MB   [===========>    ]  73%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.7MB   [===========>    ]  73%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.7MB   [===========>    ]  74%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.7MB   [===========>    ]  74%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.7MB   [===========>    ]  74%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.7MB   [===========>    ]  75%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.7MB   [===========>    ]  75%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.7MB   [===========>    ]  75%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.7MB   [===========>    ]  75%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.7MB   [===========>    ]  76%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.7MB   [===========>    ]  76%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.7MB   [===========>    ]  77%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.7MB   [===========>    ]  77%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.7MB   [===========>    ]  77%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.7MB   [===========>    ]  77%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.7MB   [===========>    ]  78%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.7MB   [===========>    ]  78%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.7MB   [===========>    ]  78%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.7MB   [===========>    ]  79%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.7MB   [===========>    ]  79%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.7MB   [===========>    ]  79%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.7MB   [============>   ]  80%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.7MB   [============>   ]  80%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.7MB   [============>   ]  80%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.7MB   [============>   ]  81%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.7MB   [============>   ]  81%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.7MB   [============>   ]  81%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.7MB   [============>   ]  81%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.7MB   [============>   ]  82%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.7MB   [============>   ]  82%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.7MB   [============>   ]  82%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.7MB   [============>   ]  83%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.7MB   [============>   ]  83%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.7MB   [============>   ]  83%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.7MB   [============>   ]  84%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.7MB   [============>   ]  84%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.7MB   [============>   ]  84%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.7MB   [============>   ]  85%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.7MB   [============>   ]  85%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.7MB   [============>   ]  85%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.7MB   [============>   ]  86%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.7MB   [============>   ]  86%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.7MB   [=============>  ]  86%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.7MB   [=============>  ]  87%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.7MB   [=============>  ]  87%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.7MB   [=============>  ]  87%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.7MB   [=============>  ]  88%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.7MB   [=============>  ]  88%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.7MB   [=============>  ]  88%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.7MB   [=============>  ]  89%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.7MB   [=============>  ]  89%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.7MB   [=============>  ]  89%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.7MB   [=============>  ]  90%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.7MB   [=============>  ]  90%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.7MB   [=============>  ]  90%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.7MB   [=============>  ]  91%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.7MB   [=============>  ]  91%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.7MB   [=============>  ]  91%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.7MB   [=============>  ]  92%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.7MB   [=============>  ]  92%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.7MB   [=============>  ]  92%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.7MB   [=============>  ]  93%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.7MB   [==============> ]  93%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.7MB   [==============> ]  93%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.7MB   [==============> ]  93%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.7MB   [==============> ]  94%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.7MB   [==============> ]  94%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.7MB   [==============> ]  94%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.7MB   [==============> ]  95%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.7MB   [==============> ]  95%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.7MB   [==============> ]  95%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.7MB   [==============> ]  96%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.7MB   [==============> ]  96%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.7MB   [==============> ]  96%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.7MB   [==============> ]  97%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.7MB   [==============> ]  97%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.7MB   [==============> ]  97%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.7MB   [==============> ]  98%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.7MB   [==============> ]  98%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.7MB   [==============> ]  98%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.7MB   [==============> ]  98%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.7MB   [==============> ]  99%
+[usr1]     40004000 .vmlinux                   6.7MB /   6.7MB   [==============> ]  99%
+[usr1]     40004000 .vmlinux                   6.7MB /   6.7MB   [==============> ]  99%
+[usr1]     40004000 .vmlinux                   6.7MB /   6.7MB   [===============>] 100%
+[usr1]     Total size: 6.69MB (1.36Mbit/s)
+[usr1]     Entry point 0x40000000
+[usr1]     Image C:/Users/The/Desktop/Unicamp/ic/fpga/image_bdx_sof.dsu loaded
+[usr1]     
+[usr1]     grmon2> run
+[term1]    Booting Linux
+[term1]    Booting Linux...
+[term1]    PROMLIB: Sun Boot Prom Version 0 Revision 0
+[term1]    
+[term1]    Linux version 2.6.21.1 (eduardo@work) (gcc version 3.4.4) #138 SMP Thu Apr 9 10:13:21 BRT 2015
+[term1]    
+[term1]    ARCH: LEON
+[term1]    
+[term1]    TYPE: Leon2/3 System-on-a-Chip
+[term1]    
+[term1]    Ethernet address: 0:0:0:0:0:0
+[term1]    
+[term1]    CACHE: 4-way associative cache, set size 4k
+[term1]    
+[term1]    Boot time fixup v1.6. 4/Mar/98 Jakub Jelinek (jj@ultra.linux.cz). Patching kernel for srmmu[Leon2]/iommu
+[term1]    
+[term1]    832MB HIGHMEM available.
+[term1]    
+[term1]    Nocache: 0xfc000000-0xfc500000, 1280 pages [128-1280]
+[term1]    
+[term1]    node 2: /cpu00 (type:cpu) (props:.node device_type mid mmu-nctx clock-frequency uart1_baud uart2_baud )
+[term1]    
+[term1]    node 3: /a: (type:serial) (props:.node device_type name )
+[term1]    
+[term1]    node 4: /ambapp0 (type:ambapp) (props:.node device_type name )
+[term1]    
+[term1]    node 5: /cpu01 (type:cpu) (props:.node device_type mid clock-frequency )
+[term1]    
+[term1]    node 6: /cpu02 (type:cpu) (props:.node device_type mid clock-frequency )
+[term1]    
+[term1]    node 7: /cpu03 (type:cpu) (props:.node device_type mid clock-frequency )
+[term1]    
+[term1]    PROM: Built device tree from rootnode 1 with 2483 bytes of memory.
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Built 1 zonelists.  Total pages: 258347
+[term1]    
+[term1]    Kernel command line: console=ttyS0,38400 rdinit=/sbin/init 
+[term1]    
+[term1]    PID hash table entries: 1024 (order: 10, 4096 bytes)
+[term1]    
+[term1]    Todo: init master_l10_counter
+[term1]    
+[term1]    Attaching grlib apbuart serial drivers (clk:99hz):
+[term1]    
+[term1]    Console: colour dummy device 80x25
+[term1]    
+[term1]    Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[term1]    
+[term1]    Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[term1]    
+[term1]    pkbase: 0xfc800000 pkend: 0xfcc00000 fixstart 0xfce5e000
+[term1]    Memory: 1027260k/1048576k available (1824k kernel code, 20560k reserved, 228k data, 4784k init, 851968k highmem)
+[term1]    
+[term1]    Mount-cache hash table entries: 512
+[term1]    
+[term1]    Entering SMP Mode...
+[term1]    
+[term1]    0:(4:32) cpus mpirq at 0x80000210 
+[term1]    
+[term1]    Starting CPU 1 : (irqmp: 0x80000210)
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Started CPU 1 
+[term1]    
+[term1]    Starting CPU 2 : (irqmp: 0x80000210)
+[term1]    
+[term1]    Started CPU 2 
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Starting CPU 3 : (irqmp: 0x80000210)
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Started CPU 3 
+[term1]    
+[term1]    Brought up 4 CPUs
+[term1]    
+[term1]    Total of 4 processors activated (395.46 BogoMIPS).
+[term1]    
+[term1]    migration_cost=10000
+[term1]    
+[term1]    NET: Registered protocol family 16
+[term1]    
+[term1]    NET: Registered protocol family 2
+[term1]    
+[term1]    IP route cache hash table entries: 8192 (order: 3, 32768 bytes)
+[term1]    
+[term1]    TCP established hash table entries: 32768 (order: 6, 393216 bytes)
+[term1]    
+[term1]    TCP bind hash table entries: 32768 (order: 6, 262144 bytes)
+[term1]    
+[term1]    TCP: Hash tables configured (established 32768 bind 32768)
+[term1]    
+[term1]    TCP reno registered
+[term1]    
+[term1]    leon: power management initialized
+[term1]    
+[term1]    highmem bounce pool size: 64 pages
+[term1]    
+[term1]    Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[term1]    
+[term1]    io scheduler noop registered
+[term1]    
+[term1]    io scheduler cfq registered (default)
+[term1]    
+[term1]    grlib apbuart: 1 serial driver(s) at [0x80000100(irq 2)]
+[term1]    
+[term1]    grlib apbuart: system frequency: 99000 khz, baud rates: 38400 38400
+[term1]    
+[term1]    ttyS0 at MMIO 0x80000100 (irq = 2) is a Leon
+[term1]    
+[term1]    Testing fifo size for UART port 0: [term1]    
+[term1]    RAMDISK driver initialized: 16 RAM disks of 4096K size 1024 blocksize
+[term1]    
+[term1]    loop: loaded (max 8 devices)
+[term1]    
+[term1]    TCP cubic registered
+[term1]    
+[term1]    NET: Registered protocol family 10
+[term1]    
+[term1]    IPv6 over IPv4 tunneling driver
+[term1]    
+[term1]    NET: Registered protocol family 17
+[term1]    
+[term1]    Freeing unused kernel memory: 4784k freed
+[term1]    
+[term1]    
+[term1]    init started: BusyBox v1.8.2 (2015-04-09 10:05:55 BRT)
+[term1]    
+[term1]    starting pid 33, tty '': '/etc/init.d/rcS'
+[term1]    mount: mounting tmpfs on /var/tmp failed: Invalid argument
+[term1]    ifconfig: SIOCGIFFLAGS: No such device
+[term1]    route: SIOCADDRT: No such device
+[term1]    
+[term1]    starting pid 44, tty '': '/bin/sh'
+[term1]    / # ./r
+[term1]    / # ./run_bdx.sh [J
+[term1]    sh: cannot exec './run_bdx.sh': No such file or directory
+[term1]    / # 
+[usr1]     
+[usr1]     
+[usr1]     CPU 0:  Interrupted!
+[usr1]             0xf0020d08: a7800000  mov  0, %asr19
+[usr1]     CPU 1:  Interrupted!
+[usr1]             0xf0020d08: a7800000  mov  0, %asr19
+[usr1]     CPU 2:  Interrupted!
+[usr1]             0xf0020d08: a7800000  mov  0, %asr19
+[usr1]     CPU 3:  Interrupted!
+[usr1]             0xf0020d08: a7800000  mov  0, %asr19
+[usr1]     
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 99.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38431, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 99
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 99.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38431, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 99
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 99.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38431, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 99
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 99.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38431, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 99
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     grmon2> load image_bdx_sof.dsu 
+[usr1]     
+[usr1]     40000000 .stage2                      0B              [>               ]   0%
+[usr1]     40000000 .stage2                   10.0kB /  10.0kB   [===============>] 100%
+[usr1]     
+[usr1]     40004000 .vmlinux                     0B              [>               ]   0%
+[usr1]     40004000 .vmlinux                  24.0kB /   6.7MB   [>               ]   0%
+[usr1]     40004000 .vmlinux                  48.0kB /   6.7MB   [>               ]   0%
+[usr1]     40004000 .vmlinux                  72.0kB /   6.7MB   [>               ]   1%
+[usr1]     40004000 .vmlinux                  88.0kB /   6.7MB   [>               ]   1%
+[usr1]     40004000 .vmlinux                 112.0kB /   6.7MB   [>               ]   1%
+[usr1]     40004000 .vmlinux                 136.0kB /   6.7MB   [>               ]   1%
+[usr1]     40004000 .vmlinux                 160.0kB /   6.7MB   [>               ]   2%
+[usr1]     40004000 .vmlinux                 184.0kB /   6.7MB   [>               ]   2%
+[usr1]     40004000 .vmlinux                 208.0kB /   6.7MB   [>               ]   3%
+[usr1]     40004000 .vmlinux                 232.0kB /   6.7MB   [>               ]   3%
+[usr1]     40004000 .vmlinux                 256.0kB /   6.7MB   [>               ]   3%
+[usr1]     40004000 .vmlinux                 280.0kB /   6.7MB   [>               ]   4%
+[usr1]     40004000 .vmlinux                 304.0kB /   6.7MB   [>               ]   4%
+[usr1]     40004000 .vmlinux                 328.0kB /   6.7MB   [>               ]   4%
+[usr1]     40004000 .vmlinux                 352.0kB /   6.7MB   [>               ]   5%
+[usr1]     40004000 .vmlinux                 376.0kB /   6.7MB   [>               ]   5%
+[usr1]     40004000 .vmlinux                 400.0kB /   6.7MB   [>               ]   5%
+[usr1]     40004000 .vmlinux                 424.0kB /   6.7MB   [>               ]   6%
+[usr1]     40004000 .vmlinux                 448.0kB /   6.7MB   [>               ]   6%
+[usr1]     40004000 .vmlinux                 472.0kB /   6.7MB   [=>              ]   6%
+[usr1]     40004000 .vmlinux                 496.0kB /   6.7MB   [=>              ]   7%
+[usr1]     40004000 .vmlinux                 520.0kB /   6.7MB   [=>              ]   7%
+[usr1]     40004000 .vmlinux                 536.0kB /   6.7MB   [=>              ]   7%
+[usr1]     40004000 .vmlinux                 560.0kB /   6.7MB   [=>              ]   8%
+[usr1]     40004000 .vmlinux                 584.0kB /   6.7MB   [=>              ]   8%
+[usr1]     40004000 .vmlinux                 608.0kB /   6.7MB   [=>              ]   8%
+[usr1]     40004000 .vmlinux                 632.0kB /   6.7MB   [=>              ]   9%
+[usr1]     40004000 .vmlinux                 656.0kB /   6.7MB   [=>              ]   9%
+[usr1]     40004000 .vmlinux                 680.0kB /   6.7MB   [=>              ]   9%
+[usr1]     40004000 .vmlinux                 696.0kB /   6.7MB   [=>              ]  10%
+[usr1]     40004000 .vmlinux                 720.0kB /   6.7MB   [=>              ]  10%
+[usr1]     40004000 .vmlinux                 744.0kB /   6.7MB   [=>              ]  10%
+[usr1]     40004000 .vmlinux                 768.0kB /   6.7MB   [=>              ]  11%
+[usr1]     40004000 .vmlinux                 792.0kB /   6.7MB   [=>              ]  11%
+[usr1]     40004000 .vmlinux                 816.0kB /   6.7MB   [=>              ]  11%
+[usr1]     40004000 .vmlinux                 832.0kB /   6.7MB   [=>              ]  12%
+[usr1]     40004000 .vmlinux                 856.0kB /   6.7MB   [=>              ]  12%
+[usr1]     40004000 .vmlinux                 880.0kB /   6.7MB   [=>              ]  12%
+[usr1]     40004000 .vmlinux                 904.0kB /   6.7MB   [=>              ]  13%
+[usr1]     40004000 .vmlinux                 928.0kB /   6.7MB   [==>             ]  13%
+[usr1]     40004000 .vmlinux                 952.0kB /   6.7MB   [==>             ]  13%
+[usr1]     40004000 .vmlinux                 976.0kB /   6.7MB   [==>             ]  14%
+[usr1]     40004000 .vmlinux                1000.0kB /   6.7MB   [==>             ]  14%
+[usr1]     40004000 .vmlinux                   1.0MB /   6.7MB   [==>             ]  14%
+[usr1]     40004000 .vmlinux                   1.0MB /   6.7MB   [==>             ]  15%
+[usr1]     40004000 .vmlinux                   1.0MB /   6.7MB   [==>             ]  15%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.7MB   [==>             ]  16%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.7MB   [==>             ]  16%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.7MB   [==>             ]  16%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.7MB   [==>             ]  16%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.7MB   [==>             ]  17%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.7MB   [==>             ]  17%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.7MB   [==>             ]  17%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.7MB   [==>             ]  18%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.7MB   [==>             ]  18%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.7MB   [==>             ]  18%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.7MB   [==>             ]  19%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.7MB   [==>             ]  19%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.7MB   [==>             ]  19%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.7MB   [===>            ]  20%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.7MB   [===>            ]  20%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.7MB   [===>            ]  20%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.7MB   [===>            ]  21%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.7MB   [===>            ]  21%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.7MB   [===>            ]  21%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.7MB   [===>            ]  22%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.7MB   [===>            ]  22%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.7MB   [===>            ]  23%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.7MB   [===>            ]  23%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.7MB   [===>            ]  23%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.7MB   [===>            ]  23%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.7MB   [===>            ]  24%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.7MB   [===>            ]  24%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.7MB   [===>            ]  25%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.7MB   [===>            ]  25%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.7MB   [===>            ]  25%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.7MB   [===>            ]  25%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.7MB   [===>            ]  26%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.7MB   [===>            ]  26%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.7MB   [====>           ]  26%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.7MB   [====>           ]  27%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.7MB   [====>           ]  27%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.7MB   [====>           ]  28%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.7MB   [====>           ]  28%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.7MB   [====>           ]  28%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.7MB   [====>           ]  29%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.7MB   [====>           ]  29%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.7MB   [====>           ]  29%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.7MB   [====>           ]  30%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.7MB   [====>           ]  30%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.7MB   [====>           ]  30%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.7MB   [====>           ]  31%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.7MB   [====>           ]  31%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.7MB   [====>           ]  31%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.7MB   [====>           ]  32%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.7MB   [====>           ]  32%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.7MB   [====>           ]  32%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.7MB   [====>           ]  33%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.7MB   [=====>          ]  33%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.7MB   [=====>          ]  33%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.7MB   [=====>          ]  34%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.7MB   [=====>          ]  34%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.7MB   [=====>          ]  34%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.7MB   [=====>          ]  35%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.7MB   [=====>          ]  35%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.7MB   [=====>          ]  35%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.7MB   [=====>          ]  36%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.7MB   [=====>          ]  36%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.7MB   [=====>          ]  36%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.7MB   [=====>          ]  37%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.7MB   [=====>          ]  37%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.7MB   [=====>          ]  37%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.7MB   [=====>          ]  38%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.7MB   [=====>          ]  38%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.7MB   [=====>          ]  38%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.7MB   [=====>          ]  39%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.7MB   [=====>          ]  39%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.7MB   [=====>          ]  39%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.7MB   [======>         ]  40%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.7MB   [======>         ]  40%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.7MB   [======>         ]  40%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.7MB   [======>         ]  41%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.7MB   [======>         ]  41%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.7MB   [======>         ]  41%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.7MB   [======>         ]  42%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.7MB   [======>         ]  42%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.7MB   [======>         ]  42%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.7MB   [======>         ]  43%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.7MB   [======>         ]  43%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.7MB   [======>         ]  43%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.7MB   [======>         ]  44%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.7MB   [======>         ]  44%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.7MB   [======>         ]  44%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.7MB   [======>         ]  44%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.7MB   [======>         ]  45%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.7MB   [======>         ]  45%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.7MB   [======>         ]  46%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.7MB   [======>         ]  46%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.7MB   [=======>        ]  46%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.7MB   [=======>        ]  47%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.7MB   [=======>        ]  47%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.7MB   [=======>        ]  47%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.7MB   [=======>        ]  48%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.7MB   [=======>        ]  48%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.7MB   [=======>        ]  48%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.7MB   [=======>        ]  49%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.7MB   [=======>        ]  49%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.7MB   [=======>        ]  49%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.7MB   [=======>        ]  50%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.7MB   [=======>        ]  50%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.7MB   [=======>        ]  50%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.7MB   [=======>        ]  51%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.7MB   [=======>        ]  51%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.7MB   [=======>        ]  51%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.7MB   [=======>        ]  52%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.7MB   [=======>        ]  52%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.7MB   [=======>        ]  52%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.7MB   [=======>        ]  53%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.7MB   [=======>        ]  53%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.7MB   [========>       ]  53%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.7MB   [========>       ]  53%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.7MB   [========>       ]  54%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.7MB   [========>       ]  54%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.7MB   [========>       ]  54%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.7MB   [========>       ]  55%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.7MB   [========>       ]  55%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.7MB   [========>       ]  55%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.7MB   [========>       ]  56%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.7MB   [========>       ]  56%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.7MB   [========>       ]  56%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.7MB   [========>       ]  57%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.7MB   [========>       ]  57%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.7MB   [========>       ]  57%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.7MB   [========>       ]  58%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.7MB   [========>       ]  58%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.7MB   [========>       ]  58%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.7MB   [========>       ]  59%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.7MB   [========>       ]  59%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.7MB   [========>       ]  59%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.7MB   [=========>      ]  60%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.7MB   [=========>      ]  60%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.7MB   [=========>      ]  60%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.7MB   [=========>      ]  61%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.7MB   [=========>      ]  61%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.7MB   [=========>      ]  61%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.7MB   [=========>      ]  62%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.7MB   [=========>      ]  62%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.7MB   [=========>      ]  62%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.7MB   [=========>      ]  63%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.7MB   [=========>      ]  63%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.7MB   [=========>      ]  63%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.7MB   [=========>      ]  64%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.7MB   [=========>      ]  64%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.7MB   [=========>      ]  64%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.7MB   [=========>      ]  65%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.7MB   [=========>      ]  65%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.7MB   [=========>      ]  65%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.7MB   [=========>      ]  66%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.7MB   [=========>      ]  66%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.7MB   [==========>     ]  66%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.7MB   [==========>     ]  67%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.7MB   [==========>     ]  67%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.7MB   [==========>     ]  67%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.7MB   [==========>     ]  68%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.7MB   [==========>     ]  68%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.7MB   [==========>     ]  68%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.7MB   [==========>     ]  69%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.7MB   [==========>     ]  69%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.7MB   [==========>     ]  69%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.7MB   [==========>     ]  70%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.7MB   [==========>     ]  70%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.7MB   [==========>     ]  70%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.7MB   [==========>     ]  71%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.7MB   [==========>     ]  71%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.7MB   [==========>     ]  71%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.7MB   [==========>     ]  72%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.7MB   [==========>     ]  72%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.7MB   [==========>     ]  72%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.7MB   [==========>     ]  73%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.7MB   [===========>    ]  73%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.7MB   [===========>    ]  73%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.7MB   [===========>    ]  74%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.7MB   [===========>    ]  74%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.7MB   [===========>    ]  74%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.7MB   [===========>    ]  75%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.7MB   [===========>    ]  75%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.7MB   [===========>    ]  75%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.7MB   [===========>    ]  76%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.7MB   [===========>    ]  76%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.7MB   [===========>    ]  76%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.7MB   [===========>    ]  77%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.7MB   [===========>    ]  77%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.7MB   [===========>    ]  77%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.7MB   [===========>    ]  78%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.7MB   [===========>    ]  78%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.7MB   [===========>    ]  78%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.7MB   [===========>    ]  79%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.7MB   [===========>    ]  79%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.7MB   [===========>    ]  79%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.7MB   [============>   ]  80%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.7MB   [============>   ]  80%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.7MB   [============>   ]  80%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.7MB   [============>   ]  80%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.7MB   [============>   ]  81%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.7MB   [============>   ]  81%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.7MB   [============>   ]  81%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.7MB   [============>   ]  82%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.7MB   [============>   ]  82%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.7MB   [============>   ]  82%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.7MB   [============>   ]  83%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.7MB   [============>   ]  83%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.7MB   [============>   ]  84%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.7MB   [============>   ]  84%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.7MB   [============>   ]  84%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.7MB   [============>   ]  85%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.7MB   [============>   ]  85%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.7MB   [============>   ]  85%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.7MB   [============>   ]  86%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.7MB   [============>   ]  86%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.7MB   [=============>  ]  86%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.7MB   [=============>  ]  87%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.7MB   [=============>  ]  87%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.7MB   [=============>  ]  87%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.7MB   [=============>  ]  88%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.7MB   [=============>  ]  88%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.7MB   [=============>  ]  88%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.7MB   [=============>  ]  89%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.7MB   [=============>  ]  89%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.7MB   [=============>  ]  89%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.7MB   [=============>  ]  90%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.7MB   [=============>  ]  90%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.7MB   [=============>  ]  90%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.7MB   [=============>  ]  91%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.7MB   [=============>  ]  91%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.7MB   [=============>  ]  91%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.7MB   [=============>  ]  92%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.7MB   [=============>  ]  92%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.7MB   [=============>  ]  92%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.7MB   [=============>  ]  93%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.7MB   [==============> ]  93%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.7MB   [==============> ]  93%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.7MB   [==============> ]  94%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.7MB   [==============> ]  94%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.7MB   [==============> ]  94%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.7MB   [==============> ]  95%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.7MB   [==============> ]  95%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.7MB   [==============> ]  95%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.7MB   [==============> ]  96%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.7MB   [==============> ]  96%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.7MB   [==============> ]  96%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.7MB   [==============> ]  97%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.7MB   [==============> ]  97%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.7MB   [==============> ]  97%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.7MB   [==============> ]  98%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.7MB   [==============> ]  98%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.7MB   [==============> ]  98%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.7MB   [==============> ]  98%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.7MB   [==============> ]  99%
+[usr1]     40004000 .vmlinux                   6.7MB /   6.7MB   [==============> ]  99%
+[usr1]     40004000 .vmlinux                   6.7MB /   6.7MB   [===============>] 100%
+[usr1]     Total size: 6.69MB (1.37Mbit/s)
+[usr1]     Entry point 0x40000000
+[usr1]     Image C:/Users/The/Desktop/Unicamp/ic/fpga/image_bdx_sof.dsu loaded
+[usr1]     
+[usr1]     grmon2> run
+[term1]    Booting Linux
+[term1]    Booting Linux...
+[term1]    PROMLIB: Sun Boot Prom Version 0 Revision 0
+[term1]    
+[term1]    Linux version 2.6.21.1 (eduardo@work) (gcc version 3.4.4) #139 SMP Thu Apr 9 12:41:07 BRT 2015
+[term1]    
+[term1]    ARCH: LEON
+[term1]    
+[term1]    TYPE: Leon2/3 System-on-a-Chip
+[term1]    
+[term1]    Ethernet address: 0:0:0:0:0:0
+[term1]    
+[term1]    CACHE: 4-way associative cache, set size 4k
+[term1]    
+[term1]    Boot time fixup v1.6. 4/Mar/98 Jakub Jelinek (jj@ultra.linux.cz). Patching kernel for srmmu[Leon2]/iommu
+[term1]    
+[term1]    832MB HIGHMEM available.
+[term1]    
+[term1]    Nocache: 0xfc000000-0xfc500000, 1280 pages [128-1280]
+[term1]    
+[term1]    node 2: /cpu00 (type:cpu) (props:.node device_type mid mmu-nctx clock-frequency uart1_baud uart2_baud )
+[term1]    
+[term1]    node 3: /a: (type:serial) (props:.node device_type name )
+[term1]    
+[term1]    node 4: /ambapp0 (type:ambapp) (props:.node device_type name )
+[term1]    
+[term1]    node 5: /cpu01 (type:cpu) (props:.node device_type mid clock-frequency )
+[term1]    
+[term1]    node 6: /cpu02 (type:cpu) (props:.node device_type mid clock-frequency )
+[term1]    
+[term1]    node 7: /cpu03 (type:cpu) (props:.node device_type mid clock-frequency )
+[term1]    
+[term1]    PROM: Built device tree from rootnode 1 with 2483 bytes of memory.
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Built 1 zonelists.  Total pages: 258347
+[term1]    
+[term1]    Kernel command line: console=ttyS0,38400 rdinit=/sbin/init 
+[term1]    
+[term1]    PID hash table entries: 1024 (order: 10, 4096 bytes)
+[term1]    
+[term1]    Todo: init master_l10_counter
+[term1]    
+[term1]    Attaching grlib apbuart serial drivers (clk:99hz):
+[term1]    
+[term1]    Console: colour dummy device 80x25
+[term1]    
+[term1]    Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[term1]    
+[term1]    Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[term1]    
+[term1]    pkbase: 0xfc800000 pkend: 0xfcc00000 fixstart 0xfce5e000
+[term1]    Memory: 1027260k/1048576k available (1824k kernel code, 20560k reserved, 228k data, 4784k init, 851968k highmem)
+[term1]    
+[term1]    Mount-cache hash table entries: 512
+[term1]    
+[term1]    Entering SMP Mode...
+[term1]    
+[term1]    0:(4:32) cpus mpirq at 0x80000210 
+[term1]    
+[term1]    Starting CPU 1 : (irqmp: 0x80000210)
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Started CPU 1 
+[term1]    
+[term1]    Starting CPU 2 : (irqmp: 0x80000210)
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Started CPU 2 
+[term1]    
+[term1]    Starting CPU 3 : (irqmp: 0x80000210)
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Started CPU 3 
+[term1]    
+[term1]    Brought up 4 CPUs
+[term1]    
+[term1]    Total of 4 processors activated (395.67 BogoMIPS).
+[term1]    
+[term1]    migration_cost=20000
+[term1]    
+[term1]    NET: Registered protocol family 16
+[term1]    
+[term1]    NET: Registered protocol family 2
+[term1]    
+[term1]    IP route cache hash table entries: 8192 (order: 3, 32768 bytes)
+[term1]    
+[term1]    TCP established hash table entries: 32768 (order: 6, 393216 bytes)
+[term1]    
+[term1]    TCP bind hash table entries: 32768 (order: 6, 262144 bytes)
+[term1]    
+[term1]    TCP: Hash tables configured (established 32768 bind 32768)
+[term1]    
+[term1]    TCP reno registered
+[term1]    
+[term1]    leon: power management initialized
+[term1]    
+[term1]    highmem bounce pool size: 64 pages
+[term1]    
+[term1]    Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[term1]    
+[term1]    io scheduler noop registered
+[term1]    
+[term1]    io scheduler cfq registered (default)
+[term1]    
+[term1]    grlib apbuart: 1 serial driver(s) at [0x80000100(irq 2)]
+[term1]    
+[term1]    grlib apbuart: system frequency: 99000 khz, baud rates: 38400 38400
+[term1]    
+[term1]    ttyS0 at MMIO 0x80000100 (irq = 2) is a Leon
+[term1]    
+[term1]    Testing fifo size for UART port 0: [term1]    
+[term1]    RAMDISK driver initialized: 16 RAM disks of 4096K size 1024 blocksize
+[term1]    
+[term1]    loop: loaded (max 8 devices)
+[term1]    
+[term1]    TCP cubic registered
+[term1]    
+[term1]    NET: Registered protocol family 10
+[term1]    
+[term1]    IPv6 over IPv4 tunneling driver
+[term1]    
+[term1]    NET: Registered protocol family 17
+[term1]    
+[term1]    Freeing unused kernel memory: 4784k freed
+[term1]    
+[term1]    
+[term1]    init started: BusyBox v1.8.2 (2015-04-09 12:33:55 BRT)
+[term1]    
+[term1]    starting pid 33, tty '': '/etc/init.d/rcS'
+[term1]    mount: mounting tmpfs on /var/tmp failed: Invalid argument
+[term1]    ifconfig: SIOCGIFFLAGS: No such device
+[term1]    route: SIOCADDRT: No such device
+[term1]    
+[term1]    starting pid 44, tty '': '/bin/sh'
+[term1]    / # ./r
+[term1]    / # ./run_bdx.sh [J
+[term1]    BEGIN DATA
+[term1]    *h263dec_bdx_software
+[term1]    BS = 100
+[term1]    
+[term1]    real	2m 0.78s
+[term1]    user	6m 1.99s
+[term1]    sys	0m 0.21s
+[term1]    *h263dec_bdx_software
+[term1]    BS = 100
+[term1]    
+[term1]    real	2m 0.78s
+[term1]    user	6m 2.00s
+[term1]    sys	0m 0.22s
+[term1]    *h263dec_bdx_software
+[term1]    BS = 100
+[term1]    
+[term1]    real	2m 1.07s
+[term1]    user	6m 2.96s
+[term1]    sys	0m 0.13s
+[term1]    *h263dec_bdx_software
+[term1]    BS = 100
+[term1]    
+[term1]    real	2m 0.77s
+[term1]    user	6m 2.00s
+[term1]    sys	0m 0.19s
+[term1]    *h263dec_bdx_software
+[term1]    BS = 100
+[term1]    
+[term1]    real	2m 0.81s
+[term1]    user	6m 2.05s
+[term1]    sys	0m 0.22s
+[term1]    *hmmer_bdx_software
+[term1]    real	36m 29.02s
+[term1]    user	1h 12m 57s
+[term1]    sys	0m 0.05s
+[term1]    *hmmer_bdx_software
+[term1]    real	36m 32.95s
+[term1]    user	1h 13m 05s
+[term1]    sys	0m 0.05s
+[term1]    *hmmer_bdx_software
+[term1]    real	36m 26.45s
+[term1]    user	1h 12m 52s
+[term1]    sys	0m 0.04s
+[term1]    *hmmer_bdx_software
+[term1]    real	36m 28.82s
+[term1]    user	1h 12m 57s
+[term1]    sys	0m 0.05s
+[term1]    *hmmer_bdx_software
+[term1]    real	36m 28.21s
+[term1]    user	1h 12m 56s
+[term1]    sys	0m 0.04s
+[term1]    *ks_bdx_software
+[term1]    real	8m 3.00s
+[term1]    user	16m 5.91s
+[term1]    sys	0m 0.02s
+[term1]    *ks_bdx_software
+[term1]    real	8m 2.68s
+[term1]    user	16m 5.29s
+[term1]    sys	0m 0.01s
+[term1]    *ks_bdx_software
+[term1]    real	8m 4.15s
+[term1]    user	16m 8.24s
+[term1]    sys	0m 0.00s
+[term1]    *ks_bdx_software
+[term1]    real	8m 2.43s
+[term1]    user	16m 4.76s
+[term1]    sys	0m 0.02s
+[term1]    *ks_bdx_software
+[term1]    real	8m 2.40s
+[term1]    user	16m 4.71s
+[term1]    sys	0m 0.02s
+[term1]    *otter_bdx_software
+[term1]    BEGIN DATA
+[usr1]     
+[usr1]     
+[usr1]     CPU 0:  Interrupted!
+[usr1]             0x00011a14: 10bffff7  ba  0x000119F0
+[usr1]     CPU 1:  Interrupted!
+[usr1]             0x00011a00: c2084000  ldub  [%g1], %g1
+[usr1]     CPU 2:  Interrupted!
+[usr1]             0x000119f0: 030004b6  sethi  %hi(0x12D800), %g1
+[usr1]     CPU 3:  Interrupted!
+[usr1]             0x00011fa4: 80a06063  cmp  %g1, 99
+[usr1]     
+[usr1]     grmon2> quit
+[usr1]     

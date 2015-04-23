@@ -1,0 +1,1 @@
+parsear o tempo do linux para pegar quando aparece ou nao o tempo em horas/minutos.

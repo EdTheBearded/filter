@@ -1,0 +1,1310 @@
+[sys]      SESSION: Wed Apr 08 11:35:55 2015
+[sys]      GRMON version: v2.0.62 eval version
+[sys]      OS: Windows
+[sys]      Command line: grmon -altjtag -u -nb -log log.txt
+[sys]      
+[sys]      GRMON2 LEON debug monitor v2.0.62 eval version
+[sys]      
+[sys]      Copyright (C) 2015 Cobham Gaisler - All rights reserved.
+[sys]      For latest updates, go to http://www.gaisler.com/
+[sys]      Comments or bug-reports to support@gaisler.com
+[sys]      
+[sys]      This eval version will expire on 18/09/2015
+[sys]      
+[sys]       JTAG chain (1): EP4SGX230(.|ES) 
+[usr1]     GRLIB build version: 4144
+[usr1]     Detected frequency:  100 MHz
+[usr1]     
+[usr1]     Component                            Vendor
+[usr1]     LEON3 SPARC V8 Processor             Cobham Gaisler
+[usr1]     LEON3 SPARC V8 Processor             Cobham Gaisler
+[usr1]     LEON3 SPARC V8 Processor             Cobham Gaisler
+[usr1]     LEON3 SPARC V8 Processor             Cobham Gaisler
+[usr1]     AHB Debug UART                       Cobham Gaisler
+[usr1]     JTAG Debug Link                      Cobham Gaisler
+[usr1]     LEON2 Memory Controller              European Space Agency
+[usr1]     AHB/APB Bridge                       Cobham Gaisler
+[usr1]     LEON3 Debug Support Unit             Cobham Gaisler
+[usr1]     Avalon-MM memory controller          Cobham Gaisler
+[usr1]     Unknown device                       Unknown vendor
+[usr1]     Generic UART                         Cobham Gaisler
+[usr1]     Multi-processor Interrupt Ctrl.      Cobham Gaisler
+[usr1]     Modular Timer Unit                   Cobham Gaisler
+[usr1]     General Purpose I/O port             Cobham Gaisler
+[usr1]     SPI Controller                       Cobham Gaisler
+[usr1]     AHB Status Register                  Cobham Gaisler
+[usr1]     
+[usr1]     Use command 'info sys' to print a detailed report of attached cores
+[usr1]     
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 100.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38343, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 100
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 100.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38343, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 100
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     grmon2> load image.dsu 
+[usr1]     
+[usr1]     40000000 .stage2                      0B              [>               ]   0%
+[usr1]     40000000 .stage2                   10.0kB /  10.0kB   [===============>] 100%
+[usr1]     
+[usr1]     40004000 .vmlinux                     0B              [>               ]   0%
+[usr1]     40004000 .vmlinux                  24.0kB /   6.6MB   [>               ]   0%
+[usr1]     40004000 .vmlinux                  48.0kB /   6.6MB   [>               ]   0%
+[usr1]     40004000 .vmlinux                  72.0kB /   6.6MB   [>               ]   1%
+[usr1]     40004000 .vmlinux                  96.0kB /   6.6MB   [>               ]   1%
+[usr1]     40004000 .vmlinux                 120.0kB /   6.6MB   [>               ]   1%
+[usr1]     40004000 .vmlinux                 144.0kB /   6.6MB   [>               ]   2%
+[usr1]     40004000 .vmlinux                 168.0kB /   6.6MB   [>               ]   2%
+[usr1]     40004000 .vmlinux                 192.0kB /   6.6MB   [>               ]   2%
+[usr1]     40004000 .vmlinux                 216.0kB /   6.6MB   [>               ]   3%
+[usr1]     40004000 .vmlinux                 240.0kB /   6.6MB   [>               ]   3%
+[usr1]     40004000 .vmlinux                 264.0kB /   6.6MB   [>               ]   3%
+[usr1]     40004000 .vmlinux                 288.0kB /   6.6MB   [>               ]   4%
+[usr1]     40004000 .vmlinux                 312.0kB /   6.6MB   [>               ]   4%
+[usr1]     40004000 .vmlinux                 336.0kB /   6.6MB   [>               ]   4%
+[usr1]     40004000 .vmlinux                 360.0kB /   6.6MB   [>               ]   5%
+[usr1]     40004000 .vmlinux                 384.0kB /   6.6MB   [>               ]   5%
+[usr1]     40004000 .vmlinux                 408.0kB /   6.6MB   [>               ]   6%
+[usr1]     40004000 .vmlinux                 432.0kB /   6.6MB   [>               ]   6%
+[usr1]     40004000 .vmlinux                 456.0kB /   6.6MB   [=>              ]   6%
+[usr1]     40004000 .vmlinux                 480.0kB /   6.6MB   [=>              ]   7%
+[usr1]     40004000 .vmlinux                 504.0kB /   6.6MB   [=>              ]   7%
+[usr1]     40004000 .vmlinux                 528.0kB /   6.6MB   [=>              ]   7%
+[usr1]     40004000 .vmlinux                 552.0kB /   6.6MB   [=>              ]   8%
+[usr1]     40004000 .vmlinux                 576.0kB /   6.6MB   [=>              ]   8%
+[usr1]     40004000 .vmlinux                 600.0kB /   6.6MB   [=>              ]   8%
+[usr1]     40004000 .vmlinux                 624.0kB /   6.6MB   [=>              ]   9%
+[usr1]     40004000 .vmlinux                 648.0kB /   6.6MB   [=>              ]   9%
+[usr1]     40004000 .vmlinux                 672.0kB /   6.6MB   [=>              ]   9%
+[usr1]     40004000 .vmlinux                 696.0kB /   6.6MB   [=>              ]  10%
+[usr1]     40004000 .vmlinux                 720.0kB /   6.6MB   [=>              ]  10%
+[usr1]     40004000 .vmlinux                 744.0kB /   6.6MB   [=>              ]  10%
+[usr1]     40004000 .vmlinux                 768.0kB /   6.6MB   [=>              ]  11%
+[usr1]     40004000 .vmlinux                 792.0kB /   6.6MB   [=>              ]  11%
+[usr1]     40004000 .vmlinux                 816.0kB /   6.6MB   [=>              ]  12%
+[usr1]     40004000 .vmlinux                 840.0kB /   6.6MB   [=>              ]  12%
+[usr1]     40004000 .vmlinux                 864.0kB /   6.6MB   [=>              ]  12%
+[usr1]     40004000 .vmlinux                 888.0kB /   6.6MB   [=>              ]  13%
+[usr1]     40004000 .vmlinux                 912.0kB /   6.6MB   [==>             ]  13%
+[usr1]     40004000 .vmlinux                 936.0kB /   6.6MB   [==>             ]  13%
+[usr1]     40004000 .vmlinux                 960.0kB /   6.6MB   [==>             ]  14%
+[usr1]     40004000 .vmlinux                 984.0kB /   6.6MB   [==>             ]  14%
+[usr1]     40004000 .vmlinux                1008.0kB /   6.6MB   [==>             ]  14%
+[usr1]     40004000 .vmlinux                   1.0MB /   6.6MB   [==>             ]  15%
+[usr1]     40004000 .vmlinux                   1.0MB /   6.6MB   [==>             ]  15%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.6MB   [==>             ]  15%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.6MB   [==>             ]  16%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.6MB   [==>             ]  16%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.6MB   [==>             ]  17%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.6MB   [==>             ]  17%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.6MB   [==>             ]  17%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.6MB   [==>             ]  18%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.6MB   [==>             ]  18%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.6MB   [==>             ]  18%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.6MB   [==>             ]  19%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.6MB   [==>             ]  19%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.6MB   [==>             ]  19%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.6MB   [===>            ]  20%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.6MB   [===>            ]  20%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.6MB   [===>            ]  20%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.6MB   [===>            ]  21%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.6MB   [===>            ]  21%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.6MB   [===>            ]  21%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.6MB   [===>            ]  22%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.6MB   [===>            ]  22%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.6MB   [===>            ]  23%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.6MB   [===>            ]  23%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.6MB   [===>            ]  23%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.6MB   [===>            ]  24%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.6MB   [===>            ]  24%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.6MB   [===>            ]  24%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.6MB   [===>            ]  25%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.6MB   [===>            ]  25%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.6MB   [===>            ]  25%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.6MB   [===>            ]  26%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.6MB   [===>            ]  26%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.6MB   [====>           ]  26%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.6MB   [====>           ]  27%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.6MB   [====>           ]  27%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.6MB   [====>           ]  28%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.6MB   [====>           ]  28%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.6MB   [====>           ]  28%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.6MB   [====>           ]  29%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.6MB   [====>           ]  29%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.6MB   [====>           ]  29%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.6MB   [====>           ]  30%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.6MB   [====>           ]  30%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.6MB   [====>           ]  30%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.6MB   [====>           ]  31%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.6MB   [====>           ]  31%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.6MB   [====>           ]  31%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.6MB   [====>           ]  32%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.6MB   [====>           ]  32%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.6MB   [====>           ]  32%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.6MB   [====>           ]  33%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.6MB   [=====>          ]  33%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.6MB   [=====>          ]  34%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.6MB   [=====>          ]  34%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.6MB   [=====>          ]  34%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.6MB   [=====>          ]  35%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.6MB   [=====>          ]  35%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.6MB   [=====>          ]  35%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.6MB   [=====>          ]  36%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.6MB   [=====>          ]  36%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.6MB   [=====>          ]  36%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.6MB   [=====>          ]  37%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.6MB   [=====>          ]  37%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.6MB   [=====>          ]  37%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.6MB   [=====>          ]  38%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.6MB   [=====>          ]  38%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.6MB   [=====>          ]  39%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.6MB   [=====>          ]  39%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.6MB   [=====>          ]  39%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.6MB   [======>         ]  40%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.6MB   [======>         ]  40%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.6MB   [======>         ]  40%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.6MB   [======>         ]  41%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.6MB   [======>         ]  41%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.6MB   [======>         ]  41%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.6MB   [======>         ]  42%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.6MB   [======>         ]  42%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.6MB   [======>         ]  42%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.6MB   [======>         ]  43%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.6MB   [======>         ]  43%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.6MB   [======>         ]  43%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.6MB   [======>         ]  44%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.6MB   [======>         ]  44%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.6MB   [======>         ]  45%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.6MB   [======>         ]  45%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.6MB   [======>         ]  45%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.6MB   [======>         ]  46%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.6MB   [======>         ]  46%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.6MB   [=======>        ]  46%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.6MB   [=======>        ]  47%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.6MB   [=======>        ]  47%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.6MB   [=======>        ]  47%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.6MB   [=======>        ]  48%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.6MB   [=======>        ]  48%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.6MB   [=======>        ]  48%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.6MB   [=======>        ]  49%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.6MB   [=======>        ]  49%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.6MB   [=======>        ]  49%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.6MB   [=======>        ]  50%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.6MB   [=======>        ]  50%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.6MB   [=======>        ]  51%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.6MB   [=======>        ]  51%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.6MB   [=======>        ]  51%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.6MB   [=======>        ]  52%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.6MB   [=======>        ]  52%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.6MB   [=======>        ]  52%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.6MB   [=======>        ]  53%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.6MB   [========>       ]  53%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.6MB   [========>       ]  53%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.6MB   [========>       ]  54%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.6MB   [========>       ]  54%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.6MB   [========>       ]  54%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.6MB   [========>       ]  55%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.6MB   [========>       ]  55%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.6MB   [========>       ]  56%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.6MB   [========>       ]  56%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.6MB   [========>       ]  56%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.6MB   [========>       ]  57%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.6MB   [========>       ]  57%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.6MB   [========>       ]  57%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.6MB   [========>       ]  58%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.6MB   [========>       ]  58%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.6MB   [========>       ]  58%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.6MB   [========>       ]  59%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.6MB   [========>       ]  59%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.6MB   [========>       ]  59%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.6MB   [=========>      ]  60%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.6MB   [=========>      ]  60%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.6MB   [=========>      ]  60%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.6MB   [=========>      ]  61%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.6MB   [=========>      ]  61%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.6MB   [=========>      ]  62%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.6MB   [=========>      ]  62%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.6MB   [=========>      ]  62%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.6MB   [=========>      ]  63%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.6MB   [=========>      ]  63%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.6MB   [=========>      ]  63%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.6MB   [=========>      ]  64%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.6MB   [=========>      ]  64%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.6MB   [=========>      ]  64%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.6MB   [=========>      ]  65%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.6MB   [=========>      ]  65%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.6MB   [=========>      ]  65%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.6MB   [=========>      ]  66%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.6MB   [=========>      ]  66%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.6MB   [==========>     ]  67%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.6MB   [==========>     ]  67%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.6MB   [==========>     ]  67%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.6MB   [==========>     ]  68%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.6MB   [==========>     ]  68%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.6MB   [==========>     ]  68%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.6MB   [==========>     ]  69%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.6MB   [==========>     ]  69%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.6MB   [==========>     ]  69%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.6MB   [==========>     ]  70%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.6MB   [==========>     ]  70%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.6MB   [==========>     ]  70%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.6MB   [==========>     ]  71%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.6MB   [==========>     ]  71%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.6MB   [==========>     ]  71%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.6MB   [==========>     ]  72%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.6MB   [==========>     ]  72%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.6MB   [==========>     ]  73%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.6MB   [===========>    ]  73%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.6MB   [===========>    ]  73%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.6MB   [===========>    ]  74%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.6MB   [===========>    ]  74%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.6MB   [===========>    ]  74%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.6MB   [===========>    ]  75%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.6MB   [===========>    ]  75%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.6MB   [===========>    ]  75%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.6MB   [===========>    ]  76%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.6MB   [===========>    ]  76%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.6MB   [===========>    ]  76%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.6MB   [===========>    ]  77%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.6MB   [===========>    ]  77%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.6MB   [===========>    ]  78%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.6MB   [===========>    ]  78%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.6MB   [===========>    ]  78%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.6MB   [===========>    ]  79%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.6MB   [===========>    ]  79%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.6MB   [===========>    ]  79%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.6MB   [============>   ]  80%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.6MB   [============>   ]  80%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.6MB   [============>   ]  80%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.6MB   [============>   ]  81%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.6MB   [============>   ]  81%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.6MB   [============>   ]  81%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.6MB   [============>   ]  82%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.6MB   [============>   ]  82%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.6MB   [============>   ]  82%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.6MB   [============>   ]  83%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.6MB   [============>   ]  83%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.6MB   [============>   ]  83%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.6MB   [============>   ]  84%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.6MB   [============>   ]  84%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.6MB   [============>   ]  84%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.6MB   [============>   ]  85%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.6MB   [============>   ]  85%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.6MB   [============>   ]  86%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.6MB   [============>   ]  86%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.6MB   [=============>  ]  86%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.6MB   [=============>  ]  87%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.6MB   [=============>  ]  87%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.6MB   [=============>  ]  87%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.6MB   [=============>  ]  88%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.6MB   [=============>  ]  88%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.6MB   [=============>  ]  88%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.6MB   [=============>  ]  89%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.6MB   [=============>  ]  89%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.6MB   [=============>  ]  89%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.6MB   [=============>  ]  90%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.6MB   [=============>  ]  90%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.6MB   [=============>  ]  91%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.6MB   [=============>  ]  91%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.6MB   [=============>  ]  91%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.6MB   [=============>  ]  92%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.6MB   [=============>  ]  92%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.6MB   [=============>  ]  92%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.6MB   [=============>  ]  93%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.6MB   [==============> ]  93%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.6MB   [==============> ]  93%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.6MB   [==============> ]  94%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.6MB   [==============> ]  94%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.6MB   [==============> ]  94%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.6MB   [==============> ]  95%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.6MB   [==============> ]  95%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.6MB   [==============> ]  95%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.6MB   [==============> ]  96%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.6MB   [==============> ]  96%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.6MB   [==============> ]  96%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.6MB   [==============> ]  97%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.6MB   [==============> ]  97%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.6MB   [==============> ]  97%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.6MB   [==============> ]  98%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.6MB   [==============> ]  98%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.6MB   [==============> ]  99%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.6MB   [==============> ]  99%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.6MB   [==============> ]  99%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.6MB   [===============>] 100%
+[usr1]     Total size: 6.62MB (1.39Mbit/s)
+[usr1]     Entry point 0x40000000
+[usr1]     Image C:/Users/The/Desktop/Unicamp/ic/fpga/image.dsu loaded
+[usr1]     
+[usr1]     grmon2> run
+[term1]    Booting Linux
+[term1]    Booting Linux...
+[term1]    PROMLIB: Sun Boot Prom Version 0 Revision 0
+[term1]    
+[term1]    Linux version 2.6.21.1 (eduardo@work) (gcc version 3.4.4) #136 SMP Wed Apr 8 10:30:06 BRT 2015
+[term1]    
+[term1]    ARCH: LEON
+[term1]    
+[term1]    TYPE: Leon2/3 System-on-a-Chip
+[term1]    
+[term1]    Ethernet address: 0:0:0:0:0:0
+[term1]    
+[term1]    CACHE: 4-way associative cache, set size 4k
+[term1]    
+[term1]    Boot time fixup v1.6. 4/Mar/98 Jakub Jelinek (jj@ultra.linux.cz). Patching kernel for srmmu[Leon2]/iommu
+[term1]    
+[term1]    832MB HIGHMEM available.
+[term1]    
+[term1]    Nocache: 0xfc000000-0xfc500000, 1280 pages [128-1280]
+[term1]    
+[term1]    node 2: /cpu00 (type:cpu) (props:.node device_type mid mmu-nctx clock-frequency uart1_baud uart2_baud )
+[term1]    
+[term1]    node 3: /a: (type:serial) (props:.node device_type name )
+[term1]    
+[term1]    node 4: /ambapp0 (type:ambapp) (props:.node device_type name )
+[term1]    
+[term1]    node 5: /cpu01 (type:cpu) (props:.node device_type mid clock-frequency )
+[term1]    
+[term1]    node 6: /cpu02 (type:cpu) (props:.node device_type mid clock-frequency )
+[term1]    
+[term1]    node 7: /cpu03 (type:cpu) (props:.node device_type mid clock-frequency )
+[term1]    
+[term1]    PROM: Built device tree from rootnode 1 with 2483 bytes of memory.
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Built 1 zonelists.  Total pages: 258366
+[term1]    
+[term1]    Kernel command line: console=ttyS0,38400 rdinit=/sbin/init 
+[term1]    
+[term1]    PID hash table entries: 1024 (order: 10, 4096 bytes)
+[term1]    
+[term1]    Todo: init master_l10_counter
+[term1]    
+[term1]    Attaching grlib apbuart serial drivers (clk:100hz):
+[term1]    
+[term1]    Console: colour dummy device 80x25
+[term1]    
+[term1]    Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[term1]    
+[term1]    Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[term1]    
+[term1]    pkbase: 0xfc800000 pkend: 0xfcc00000 fixstart 0xfce5e000
+[term1]    Memory: 1027260k/1048576k available (1824k kernel code, 20484k reserved, 228k data, 4708k init, 851968k highmem)
+[term1]    
+[term1]    Mount-cache hash table entries: 512
+[term1]    
+[term1]    Entering SMP Mode...
+[term1]    
+[term1]    0:(4:32) cpus mpirq at 0x80000210 
+[term1]    
+[term1]    Starting CPU 1 : (irqmp: 0x80000210)
+[term1]    
+[term1]    Started CPU 1 
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Starting CPU 2 : (irqmp: 0x80000210)
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Started CPU 2 
+[term1]    
+[term1]    Starting CPU 3 : (irqmp: 0x80000210)
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Started CPU 3 
+[term1]    
+[term1]    Brought up 4 CPUs
+[term1]    
+[term1]    Total of 4 processors activated (399.56 BogoMIPS).
+[term1]    
+[term1]    migration_cost=10000
+[term1]    
+[term1]    NET: Registered protocol family 16
+[term1]    
+[term1]    NET: Registered protocol family 2
+[term1]    
+[term1]    IP route cache hash table entries: 8192 (order: 3, 32768 bytes)
+[term1]    
+[term1]    TCP established hash table entries: 32768 (order: 6, 393216 bytes)
+[term1]    
+[term1]    TCP bind hash table entries: 32768 (order: 6, 262144 bytes)
+[term1]    
+[term1]    TCP: Hash tables configured (established 32768 bind 32768)
+[term1]    
+[term1]    TCP reno registered
+[term1]    
+[term1]    leon: power management initialized
+[term1]    
+[term1]    highmem bounce pool size: 64 pages
+[term1]    
+[term1]    Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[term1]    
+[term1]    io scheduler noop registered
+[term1]    
+[term1]    io scheduler cfq registered (default)
+[term1]    
+[term1]    grlib apbuart: 1 serial driver(s) at [0x80000100(irq 2)]
+[term1]    
+[term1]    grlib apbuart: system frequency: 100000 khz, baud rates: 38400 38400
+[term1]    
+[term1]    ttyS0 at MMIO 0x80000100 (irq = 2) is a Leon
+[term1]    
+[term1]    Testing fifo size for UART port 0: [term1]    
+[term1]    RAMDISK driver initialized: 16 RAM disks of 4096K size 1024 blocksize
+[term1]    
+[term1]    loop: loaded (max 8 devices)
+[term1]    
+[term1]    TCP cubic registered
+[term1]    
+[term1]    NET: Registered protocol family 10
+[term1]    
+[term1]    IPv6 over IPv4 tunneling driver
+[term1]    
+[term1]    NET: Registered protocol family 17
+[term1]    
+[term1]    Freeing unused kernel memory: 4708k freed
+[term1]    
+[term1]    
+[term1]    init started: BusyBox v1.8.2 (2015-04-08 10:23:29 BRT)
+[term1]    
+[term1]    starting pid 33, tty '': '/etc/init.d/rcS'
+[term1]    mount: mounting tmpfs on /var/tmp failed: Invalid argument
+[term1]    ifconfig: SIOCGIFFLAGS: No such device
+[term1]    route: SIOCADDRT: No such device
+[term1]    
+[term1]    starting pid 44, tty '': '/bin/sh'
+[term1]    / # ./Ks S KL-4.in > KL-4.out
+[usr1]     
+[usr1]     
+[usr1]     CPU 0:  Interrupted!
+[usr1]             0xf0020d08: a7800000  mov  0, %asr19
+[usr1]     CPU 1:  Interrupted!
+[usr1]             0xf0020d08: a7800000  mov  0, %asr19
+[usr1]     CPU 2:  Interrupted!
+[usr1]             0xf0020d08: a7800000  mov  0, %asr19
+[usr1]     CPU 3:  Interrupted!
+[usr1]             0x000127e8: 9a102000  mov  0, %o5
+[usr1]     
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 100.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38343, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 100
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     cpu0      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 0
+[usr1]     cpu1      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 1
+[usr1]     cpu2      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 2
+[usr1]     cpu3      Cobham Gaisler  LEON3 SPARC V8 Processor    
+[usr1]               AHB Master 3
+[usr1]     ahbuart0  Cobham Gaisler  AHB Debug UART    
+[usr1]               AHB Master 4
+[usr1]               APB: 80000700 - 80000800
+[usr1]               Baudrate 115200, AHB frequency 100.00 MHz
+[usr1]     ahbjtag0  Cobham Gaisler  JTAG Debug Link    
+[usr1]               AHB Master 5
+[usr1]     mctrl0    European Space Agency  LEON2 Memory Controller    
+[usr1]               AHB: 00000000 - 04000000
+[usr1]               APB: 80000000 - 80000100
+[usr1]               16-bit prom @ 0x00000000
+[usr1]     apbmst0   Cobham Gaisler  AHB/APB Bridge    
+[usr1]               AHB: 80000000 - 80100000
+[usr1]     dsu0      Cobham Gaisler  LEON3 Debug Support Unit    
+[usr1]               AHB: E0000000 - E4000000
+[usr1]               AHB trace: 128 lines, 32-bit bus
+[usr1]               CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU1:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU2:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]               CPU3:  win 8, hwbp 2, itrace 128, V8 mul/div, srmmu, lddel 1
+[usr1]                      stack pointer 0x7ffffff0
+[usr1]                      icache 4 * 4 kB, 32 B/line lru
+[usr1]                      dcache 4 * 4 kB, 16 B/line lru, snoop tags
+[usr1]     ahb2avla0 Cobham Gaisler  Avalon-MM memory controller    
+[usr1]               AHB: 40000000 - 80000000
+[usr1]               AHB: FFF00000 - 00000000
+[usr1]               SDRAM: 1024 Mbyte
+[usr1]     adev10    Unknown vendor  Unknown device    
+[usr1]               AHB: FFFEEE00 - FFFEEF00
+[usr1]     uart0     Cobham Gaisler  Generic UART    
+[usr1]               APB: 80000100 - 80000200
+[usr1]               IRQ: 2
+[usr1]               Baudrate 38343, FIFO debug mode
+[usr1]     irqmp0    Cobham Gaisler  Multi-processor Interrupt Ctrl.    
+[usr1]               APB: 80000200 - 80000300
+[usr1]     gptimer0  Cobham Gaisler  Modular Timer Unit    
+[usr1]               APB: 80000300 - 80000400
+[usr1]               IRQ: 8
+[usr1]               16-bit scalar, 2 * 32-bit timers, divisor 100
+[usr1]     gpio0     Cobham Gaisler  General Purpose I/O port    
+[usr1]               APB: 80000900 - 80000A00
+[usr1]     spi0      Cobham Gaisler  SPI Controller    
+[usr1]               APB: 80000A00 - 80000B00
+[usr1]               IRQ: 10
+[usr1]               FIFO depth: 4, 2 slave select signals
+[usr1]               Maximum word length: 32 bits
+[usr1]               Supports 3-wire mode
+[usr1]               Controller index for use in GRMON: 0
+[usr1]     ahbstat0  Cobham Gaisler  AHB Status Register    
+[usr1]               APB: 80000F00 - 80001000
+[usr1]               IRQ: 1
+[usr1]     grmon2> load image.dsu 
+[usr1]     
+[usr1]     40000000 .stage2                      0B              [>               ]   0%
+[usr1]     40000000 .stage2                   10.0kB /  10.0kB   [===============>] 100%
+[usr1]     
+[usr1]     40004000 .vmlinux                     0B              [>               ]   0%
+[usr1]     40004000 .vmlinux                  24.0kB /   6.6MB   [>               ]   0%
+[usr1]     40004000 .vmlinux                  48.0kB /   6.6MB   [>               ]   0%
+[usr1]     40004000 .vmlinux                  72.0kB /   6.6MB   [>               ]   1%
+[usr1]     40004000 .vmlinux                  96.0kB /   6.6MB   [>               ]   1%
+[usr1]     40004000 .vmlinux                 120.0kB /   6.6MB   [>               ]   1%
+[usr1]     40004000 .vmlinux                 144.0kB /   6.6MB   [>               ]   2%
+[usr1]     40004000 .vmlinux                 168.0kB /   6.6MB   [>               ]   2%
+[usr1]     40004000 .vmlinux                 192.0kB /   6.6MB   [>               ]   2%
+[usr1]     40004000 .vmlinux                 216.0kB /   6.6MB   [>               ]   3%
+[usr1]     40004000 .vmlinux                 240.0kB /   6.6MB   [>               ]   3%
+[usr1]     40004000 .vmlinux                 264.0kB /   6.6MB   [>               ]   3%
+[usr1]     40004000 .vmlinux                 288.0kB /   6.6MB   [>               ]   4%
+[usr1]     40004000 .vmlinux                 312.0kB /   6.6MB   [>               ]   4%
+[usr1]     40004000 .vmlinux                 336.0kB /   6.6MB   [>               ]   4%
+[usr1]     40004000 .vmlinux                 360.0kB /   6.6MB   [>               ]   5%
+[usr1]     40004000 .vmlinux                 384.0kB /   6.6MB   [>               ]   5%
+[usr1]     40004000 .vmlinux                 408.0kB /   6.6MB   [>               ]   6%
+[usr1]     40004000 .vmlinux                 432.0kB /   6.6MB   [>               ]   6%
+[usr1]     40004000 .vmlinux                 456.0kB /   6.6MB   [=>              ]   6%
+[usr1]     40004000 .vmlinux                 480.0kB /   6.6MB   [=>              ]   7%
+[usr1]     40004000 .vmlinux                 504.0kB /   6.6MB   [=>              ]   7%
+[usr1]     40004000 .vmlinux                 528.0kB /   6.6MB   [=>              ]   7%
+[usr1]     40004000 .vmlinux                 552.0kB /   6.6MB   [=>              ]   8%
+[usr1]     40004000 .vmlinux                 576.0kB /   6.6MB   [=>              ]   8%
+[usr1]     40004000 .vmlinux                 600.0kB /   6.6MB   [=>              ]   8%
+[usr1]     40004000 .vmlinux                 624.0kB /   6.6MB   [=>              ]   9%
+[usr1]     40004000 .vmlinux                 648.0kB /   6.6MB   [=>              ]   9%
+[usr1]     40004000 .vmlinux                 672.0kB /   6.6MB   [=>              ]   9%
+[usr1]     40004000 .vmlinux                 696.0kB /   6.6MB   [=>              ]  10%
+[usr1]     40004000 .vmlinux                 720.0kB /   6.6MB   [=>              ]  10%
+[usr1]     40004000 .vmlinux                 744.0kB /   6.6MB   [=>              ]  10%
+[usr1]     40004000 .vmlinux                 768.0kB /   6.6MB   [=>              ]  11%
+[usr1]     40004000 .vmlinux                 792.0kB /   6.6MB   [=>              ]  11%
+[usr1]     40004000 .vmlinux                 808.0kB /   6.6MB   [=>              ]  11%
+[usr1]     40004000 .vmlinux                 832.0kB /   6.6MB   [=>              ]  12%
+[usr1]     40004000 .vmlinux                 856.0kB /   6.6MB   [=>              ]  12%
+[usr1]     40004000 .vmlinux                 880.0kB /   6.6MB   [=>              ]  13%
+[usr1]     40004000 .vmlinux                 904.0kB /   6.6MB   [==>             ]  13%
+[usr1]     40004000 .vmlinux                 928.0kB /   6.6MB   [==>             ]  13%
+[usr1]     40004000 .vmlinux                 952.0kB /   6.6MB   [==>             ]  14%
+[usr1]     40004000 .vmlinux                 976.0kB /   6.6MB   [==>             ]  14%
+[usr1]     40004000 .vmlinux                1000.0kB /   6.6MB   [==>             ]  14%
+[usr1]     40004000 .vmlinux                   1.0MB /   6.6MB   [==>             ]  15%
+[usr1]     40004000 .vmlinux                   1.0MB /   6.6MB   [==>             ]  15%
+[usr1]     40004000 .vmlinux                   1.0MB /   6.6MB   [==>             ]  15%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.6MB   [==>             ]  16%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.6MB   [==>             ]  16%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.6MB   [==>             ]  16%
+[usr1]     40004000 .vmlinux                   1.1MB /   6.6MB   [==>             ]  17%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.6MB   [==>             ]  17%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.6MB   [==>             ]  17%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.6MB   [==>             ]  18%
+[usr1]     40004000 .vmlinux                   1.2MB /   6.6MB   [==>             ]  18%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.6MB   [==>             ]  19%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.6MB   [==>             ]  19%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.6MB   [==>             ]  19%
+[usr1]     40004000 .vmlinux                   1.3MB /   6.6MB   [===>            ]  20%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.6MB   [===>            ]  20%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.6MB   [===>            ]  20%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.6MB   [===>            ]  21%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.6MB   [===>            ]  21%
+[usr1]     40004000 .vmlinux                   1.4MB /   6.6MB   [===>            ]  21%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.6MB   [===>            ]  22%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.6MB   [===>            ]  22%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.6MB   [===>            ]  22%
+[usr1]     40004000 .vmlinux                   1.5MB /   6.6MB   [===>            ]  23%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.6MB   [===>            ]  23%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.6MB   [===>            ]  23%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.6MB   [===>            ]  24%
+[usr1]     40004000 .vmlinux                   1.6MB /   6.6MB   [===>            ]  24%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.6MB   [===>            ]  25%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.6MB   [===>            ]  25%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.6MB   [===>            ]  25%
+[usr1]     40004000 .vmlinux                   1.7MB /   6.6MB   [===>            ]  26%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.6MB   [===>            ]  26%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.6MB   [====>           ]  26%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.6MB   [====>           ]  27%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.6MB   [====>           ]  27%
+[usr1]     40004000 .vmlinux                   1.8MB /   6.6MB   [====>           ]  27%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.6MB   [====>           ]  28%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.6MB   [====>           ]  28%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.6MB   [====>           ]  28%
+[usr1]     40004000 .vmlinux                   1.9MB /   6.6MB   [====>           ]  29%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.6MB   [====>           ]  29%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.6MB   [====>           ]  30%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.6MB   [====>           ]  30%
+[usr1]     40004000 .vmlinux                   2.0MB /   6.6MB   [====>           ]  30%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.6MB   [====>           ]  31%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.6MB   [====>           ]  31%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.6MB   [====>           ]  31%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.6MB   [====>           ]  32%
+[usr1]     40004000 .vmlinux                   2.1MB /   6.6MB   [====>           ]  32%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.6MB   [====>           ]  32%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.6MB   [====>           ]  33%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.6MB   [=====>          ]  33%
+[usr1]     40004000 .vmlinux                   2.2MB /   6.6MB   [=====>          ]  33%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.6MB   [=====>          ]  34%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.6MB   [=====>          ]  34%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.6MB   [=====>          ]  34%
+[usr1]     40004000 .vmlinux                   2.3MB /   6.6MB   [=====>          ]  35%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.6MB   [=====>          ]  35%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.6MB   [=====>          ]  36%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.6MB   [=====>          ]  36%
+[usr1]     40004000 .vmlinux                   2.4MB /   6.6MB   [=====>          ]  36%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.6MB   [=====>          ]  37%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.6MB   [=====>          ]  37%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.6MB   [=====>          ]  37%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.6MB   [=====>          ]  38%
+[usr1]     40004000 .vmlinux                   2.5MB /   6.6MB   [=====>          ]  38%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.6MB   [=====>          ]  38%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.6MB   [=====>          ]  39%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.6MB   [=====>          ]  39%
+[usr1]     40004000 .vmlinux                   2.6MB /   6.6MB   [=====>          ]  39%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.6MB   [======>         ]  40%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.6MB   [======>         ]  40%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.6MB   [======>         ]  40%
+[usr1]     40004000 .vmlinux                   2.7MB /   6.6MB   [======>         ]  41%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.6MB   [======>         ]  41%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.6MB   [======>         ]  41%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.6MB   [======>         ]  42%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.6MB   [======>         ]  42%
+[usr1]     40004000 .vmlinux                   2.8MB /   6.6MB   [======>         ]  43%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.6MB   [======>         ]  43%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.6MB   [======>         ]  43%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.6MB   [======>         ]  44%
+[usr1]     40004000 .vmlinux                   2.9MB /   6.6MB   [======>         ]  44%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.6MB   [======>         ]  44%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.6MB   [======>         ]  45%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.6MB   [======>         ]  45%
+[usr1]     40004000 .vmlinux                   3.0MB /   6.6MB   [======>         ]  45%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.6MB   [======>         ]  46%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.6MB   [======>         ]  46%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.6MB   [=======>        ]  46%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.6MB   [=======>        ]  47%
+[usr1]     40004000 .vmlinux                   3.1MB /   6.6MB   [=======>        ]  47%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.6MB   [=======>        ]  47%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.6MB   [=======>        ]  48%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.6MB   [=======>        ]  48%
+[usr1]     40004000 .vmlinux                   3.2MB /   6.6MB   [=======>        ]  49%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.6MB   [=======>        ]  49%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.6MB   [=======>        ]  49%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.6MB   [=======>        ]  50%
+[usr1]     40004000 .vmlinux                   3.3MB /   6.6MB   [=======>        ]  50%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.6MB   [=======>        ]  50%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.6MB   [=======>        ]  51%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.6MB   [=======>        ]  51%
+[usr1]     40004000 .vmlinux                   3.4MB /   6.6MB   [=======>        ]  51%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.6MB   [=======>        ]  52%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.6MB   [=======>        ]  52%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.6MB   [=======>        ]  52%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.6MB   [=======>        ]  53%
+[usr1]     40004000 .vmlinux                   3.5MB /   6.6MB   [========>       ]  53%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.6MB   [========>       ]  54%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.6MB   [========>       ]  54%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.6MB   [========>       ]  54%
+[usr1]     40004000 .vmlinux                   3.6MB /   6.6MB   [========>       ]  55%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.6MB   [========>       ]  55%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.6MB   [========>       ]  55%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.6MB   [========>       ]  56%
+[usr1]     40004000 .vmlinux                   3.7MB /   6.6MB   [========>       ]  56%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.6MB   [========>       ]  56%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.6MB   [========>       ]  57%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.6MB   [========>       ]  57%
+[usr1]     40004000 .vmlinux                   3.8MB /   6.6MB   [========>       ]  57%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.6MB   [========>       ]  58%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.6MB   [========>       ]  58%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.6MB   [========>       ]  58%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.6MB   [========>       ]  59%
+[usr1]     40004000 .vmlinux                   3.9MB /   6.6MB   [========>       ]  59%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.6MB   [=========>      ]  60%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.6MB   [=========>      ]  60%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.6MB   [=========>      ]  60%
+[usr1]     40004000 .vmlinux                   4.0MB /   6.6MB   [=========>      ]  61%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.6MB   [=========>      ]  61%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.6MB   [=========>      ]  61%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.6MB   [=========>      ]  62%
+[usr1]     40004000 .vmlinux                   4.1MB /   6.6MB   [=========>      ]  62%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.6MB   [=========>      ]  62%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.6MB   [=========>      ]  63%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.6MB   [=========>      ]  63%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.6MB   [=========>      ]  63%
+[usr1]     40004000 .vmlinux                   4.2MB /   6.6MB   [=========>      ]  64%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.6MB   [=========>      ]  64%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.6MB   [=========>      ]  65%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.6MB   [=========>      ]  65%
+[usr1]     40004000 .vmlinux                   4.3MB /   6.6MB   [=========>      ]  65%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.6MB   [=========>      ]  66%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.6MB   [=========>      ]  66%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.6MB   [==========>     ]  66%
+[usr1]     40004000 .vmlinux                   4.4MB /   6.6MB   [==========>     ]  67%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.6MB   [==========>     ]  67%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.6MB   [==========>     ]  67%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.6MB   [==========>     ]  68%
+[usr1]     40004000 .vmlinux                   4.5MB /   6.6MB   [==========>     ]  68%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.6MB   [==========>     ]  68%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.6MB   [==========>     ]  69%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.6MB   [==========>     ]  69%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.6MB   [==========>     ]  69%
+[usr1]     40004000 .vmlinux                   4.6MB /   6.6MB   [==========>     ]  70%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.6MB   [==========>     ]  70%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.6MB   [==========>     ]  71%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.6MB   [==========>     ]  71%
+[usr1]     40004000 .vmlinux                   4.7MB /   6.6MB   [==========>     ]  71%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.6MB   [==========>     ]  72%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.6MB   [==========>     ]  72%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.6MB   [==========>     ]  72%
+[usr1]     40004000 .vmlinux                   4.8MB /   6.6MB   [==========>     ]  73%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.6MB   [===========>    ]  73%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.6MB   [===========>    ]  73%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.6MB   [===========>    ]  74%
+[usr1]     40004000 .vmlinux                   4.9MB /   6.6MB   [===========>    ]  74%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.6MB   [===========>    ]  74%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.6MB   [===========>    ]  75%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.6MB   [===========>    ]  75%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.6MB   [===========>    ]  75%
+[usr1]     40004000 .vmlinux                   5.0MB /   6.6MB   [===========>    ]  76%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.6MB   [===========>    ]  76%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.6MB   [===========>    ]  77%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.6MB   [===========>    ]  77%
+[usr1]     40004000 .vmlinux                   5.1MB /   6.6MB   [===========>    ]  77%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.6MB   [===========>    ]  78%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.6MB   [===========>    ]  78%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.6MB   [===========>    ]  78%
+[usr1]     40004000 .vmlinux                   5.2MB /   6.6MB   [===========>    ]  79%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.6MB   [===========>    ]  79%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.6MB   [===========>    ]  79%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.6MB   [============>   ]  80%
+[usr1]     40004000 .vmlinux                   5.3MB /   6.6MB   [============>   ]  80%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.6MB   [============>   ]  80%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.6MB   [============>   ]  81%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.6MB   [============>   ]  81%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.6MB   [============>   ]  82%
+[usr1]     40004000 .vmlinux                   5.4MB /   6.6MB   [============>   ]  82%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.6MB   [============>   ]  82%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.6MB   [============>   ]  83%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.6MB   [============>   ]  83%
+[usr1]     40004000 .vmlinux                   5.5MB /   6.6MB   [============>   ]  83%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.6MB   [============>   ]  84%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.6MB   [============>   ]  84%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.6MB   [============>   ]  84%
+[usr1]     40004000 .vmlinux                   5.6MB /   6.6MB   [============>   ]  85%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.6MB   [============>   ]  85%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.6MB   [============>   ]  85%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.6MB   [============>   ]  86%
+[usr1]     40004000 .vmlinux                   5.7MB /   6.6MB   [============>   ]  86%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.6MB   [=============>  ]  86%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.6MB   [=============>  ]  87%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.6MB   [=============>  ]  87%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.6MB   [=============>  ]  88%
+[usr1]     40004000 .vmlinux                   5.8MB /   6.6MB   [=============>  ]  88%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.6MB   [=============>  ]  88%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.6MB   [=============>  ]  89%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.6MB   [=============>  ]  89%
+[usr1]     40004000 .vmlinux                   5.9MB /   6.6MB   [=============>  ]  89%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.6MB   [=============>  ]  90%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.6MB   [=============>  ]  90%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.6MB   [=============>  ]  90%
+[usr1]     40004000 .vmlinux                   6.0MB /   6.6MB   [=============>  ]  91%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.6MB   [=============>  ]  91%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.6MB   [=============>  ]  91%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.6MB   [=============>  ]  92%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.6MB   [=============>  ]  92%
+[usr1]     40004000 .vmlinux                   6.1MB /   6.6MB   [=============>  ]  93%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.6MB   [==============> ]  93%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.6MB   [==============> ]  93%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.6MB   [==============> ]  94%
+[usr1]     40004000 .vmlinux                   6.2MB /   6.6MB   [==============> ]  94%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.6MB   [==============> ]  94%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.6MB   [==============> ]  95%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.6MB   [==============> ]  95%
+[usr1]     40004000 .vmlinux                   6.3MB /   6.6MB   [==============> ]  95%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.6MB   [==============> ]  96%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.6MB   [==============> ]  96%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.6MB   [==============> ]  96%
+[usr1]     40004000 .vmlinux                   6.4MB /   6.6MB   [==============> ]  97%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.6MB   [==============> ]  97%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.6MB   [==============> ]  97%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.6MB   [==============> ]  98%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.6MB   [==============> ]  98%
+[usr1]     40004000 .vmlinux                   6.5MB /   6.6MB   [==============> ]  99%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.6MB   [==============> ]  99%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.6MB   [==============> ]  99%
+[usr1]     40004000 .vmlinux                   6.6MB /   6.6MB   [===============>] 100%
+[usr1]     Total size: 6.62MB (1.40Mbit/s)
+[usr1]     Entry point 0x40000000
+[usr1]     Image C:/Users/The/Desktop/Unicamp/ic/fpga/image.dsu loaded
+[usr1]     
+[usr1]     grmon2> run
+[term1]    Booting Linux
+[term1]    Booting Linux...
+[term1]    PROMLIB: Sun Boot Prom Version 0 Revision 0
+[term1]    
+[term1]    Linux version 2.6.21.1 (eduardo@work) (gcc version 3.4.4) #136 SMP Wed Apr 8 10:30:06 BRT 2015
+[term1]    
+[term1]    ARCH: LEON
+[term1]    
+[term1]    TYPE: Leon2/3 System-on-a-Chip
+[term1]    
+[term1]    Ethernet address: 0:0:0:0:0:0
+[term1]    
+[term1]    CACHE: 4-way associative cache, set size 4k
+[term1]    
+[term1]    Boot time fixup v1.6. 4/Mar/98 Jakub Jelinek (jj@ultra.linux.cz). Patching kernel for srmmu[Leon2]/iommu
+[term1]    
+[term1]    832MB HIGHMEM available.
+[term1]    
+[term1]    Nocache: 0xfc000000-0xfc500000, 1280 pages [128-1280]
+[term1]    
+[term1]    node 2: /cpu00 (type:cpu) (props:.node device_type mid mmu-nctx clock-frequency uart1_baud uart2_baud )
+[term1]    
+[term1]    node 3: /a: (type:serial) (props:.node device_type name )
+[term1]    
+[term1]    node 4: /ambapp0 (type:ambapp) (props:.node device_type name )
+[term1]    
+[term1]    node 5: /cpu01 (type:cpu) (props:.node device_type mid clock-frequency )
+[term1]    
+[term1]    node 6: /cpu02 (type:cpu) (props:.node device_type mid clock-frequency )
+[term1]    
+[term1]    node 7: /cpu03 (type:cpu) (props:.node device_type mid clock-frequency )
+[term1]    
+[term1]    PROM: Built device tree from rootnode 1 with 2483 bytes of memory.
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Built 1 zonelists.  Total pages: 258366
+[term1]    
+[term1]    Kernel command line: console=ttyS0,38400 rdinit=/sbin/init 
+[term1]    
+[term1]    PID hash table entries: 1024 (order: 10, 4096 bytes)
+[term1]    
+[term1]    Todo: init master_l10_counter
+[term1]    
+[term1]    Attaching grlib apbuart serial drivers (clk:100hz):
+[term1]    
+[term1]    Console: colour dummy device 80x25
+[term1]    
+[term1]    Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[term1]    
+[term1]    Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[term1]    
+[term1]    pkbase: 0xfc800000 pkend: 0xfcc00000 fixstart 0xfce5e000
+[term1]    Memory: 1027260k/1048576k available (1824k kernel code, 20484k reserved, 228k data, 4708k init, 851968k highmem)
+[term1]    
+[term1]    Mount-cache hash table entries: 512
+[term1]    
+[term1]    Entering SMP Mode...
+[term1]    
+[term1]    0:(4:32) cpus mpirq at 0x80000210 
+[term1]    
+[term1]    Starting CPU 1 : (irqmp: 0x80000210)
+[term1]    
+[term1]    Started CPU 1 
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Starting CPU 2 : (irqmp: 0x80000210)
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Started CPU 2 
+[term1]    
+[term1]    Starting CPU 3 : (irqmp: 0x80000210)
+[term1]    
+[term1]    DEBUG: psr.impl = 0xf  fsr.vers = 0x7
+[term1]    
+[term1]    Started CPU 3 
+[term1]    
+[term1]    Brought up 4 CPUs
+[term1]    
+[term1]    Total of 4 processors activated (399.56 BogoMIPS).
+[term1]    
+[term1]    migration_cost=20000
+[term1]    
+[term1]    NET: Registered protocol family 16
+[term1]    
+[term1]    NET: Registered protocol family 2
+[term1]    
+[term1]    IP route cache hash table entries: 8192 (order: 3, 32768 bytes)
+[term1]    
+[term1]    TCP established hash table entries: 32768 (order: 6, 393216 bytes)
+[term1]    
+[term1]    TCP bind hash table entries: 32768 (order: 6, 262144 bytes)
+[term1]    
+[term1]    TCP: Hash tables configured (established 32768 bind 32768)
+[term1]    
+[term1]    TCP reno registered
+[term1]    
+[term1]    leon: power management initialized
+[term1]    
+[term1]    highmem bounce pool size: 64 pages
+[term1]    
+[term1]    Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[term1]    
+[term1]    io scheduler noop registered
+[term1]    
+[term1]    io scheduler cfq registered (default)
+[term1]    
+[term1]    grlib apbuart: 1 serial driver(s) at [0x80000100(irq 2)]
+[term1]    
+[term1]    grlib apbuart: system frequency: 100000 khz, baud rates: 38400 38400
+[term1]    
+[term1]    ttyS0 at MMIO 0x80000100 (irq = 2) is a Leon
+[term1]    
+[term1]    Testing fifo size for UART port 0: [term1]    
+[term1]    RAMDISK driver initialized: 16 RAM disks of 4096K size 1024 blocksize
+[term1]    
+[term1]    loop: loaded (max 8 devices)
+[term1]    
+[term1]    TCP cubic registered
+[term1]    
+[term1]    NET: Registered protocol family 10
+[term1]    
+[term1]    IPv6 over IPv4 tunneling driver
+[term1]    
+[term1]    NET: Registered protocol family 17
+[term1]    
+[term1]    Freeing unused kernel memory: 4708k freed
+[term1]    
+[term1]    
+[term1]    init started: BusyBox v1.8.2 (2015-04-08 10:23:29 BRT)
+[term1]    
+[term1]    starting pid 33, tty '': '/etc/init.d/rcS'
+[term1]    mount: mounting tmpfs on /var/tmp failed: Invalid argument
+[term1]    ifconfig: SIOCGIFFLAGS: No such device
+[term1]    route: SIOCADDRT: No such device
+[term1]    
+[term1]    starting pid 44, tty '': '/bin/sh'
+[term1]    / # ./run[5D
+[term1]    / # ./run_serial.sh [J
+[term1]    BEGIN DATA
+[term1]    *h263dec_serial
+[term1]    
+[term1]    real	1m 31.18s
+[term1]    user	1m 30.94s
+[term1]    sys	0m 0.23s
+[term1]    *h263dec_serial
+[term1]    
+[term1]    real	1m 31.33s
+[term1]    user	1m 31.08s
+[term1]    sys	0m 0.24s
+[term1]    *h263dec_serial
+[term1]    
+[term1]    real	1m 31.18s
+[term1]    user	1m 30.90s
+[term1]    sys	0m 0.26s
+[term1]    *h263dec_serial
+[term1]    
+[term1]    real	1m 31.15s
+[term1]    user	1m 30.96s
+[term1]    sys	0m 0.18s
+[term1]    *h263dec_serial
+[term1]    
+[term1]    real	1m 31.18s
+[term1]    user	1m 30.94s
+[term1]    sys	0m 0.23s
+[term1]    *hmmer_serial
+[term1]    real	33m 42.71s
+[term1]    user	33m 42.64s
+[term1]    sys	0m 0.03s
+[term1]    *hmmer_serial
+[term1]    real	33m 50.22s
+[term1]    user	33m 50.12s
+[term1]    sys	0m 0.06s
+[term1]    *hmmer_serial
+[term1]    real	33m 42.41s
+[term1]    user	33m 42.34s
+[term1]    sys	0m 0.03s
+[term1]    *hmmer_serial
+[term1]    real	33m 42.91s
+[term1]    user	33m 42.84s
+[term1]    sys	0m 0.03s
+[term1]    *hmmer_serial
+[term1]    real	33m 45.94s
+[term1]    user	33m 45.86s
+[term1]    sys	0m 0.04s
+[term1]    *ks_serial
+[term1]    real	7m 43.16s
+[term1]    user	7m 43.12s
+[term1]    sys	0m 0.02s
+[term1]    *ks_serial
+[term1]    real	7m 42.68s
+[term1]    user	7m 42.64s
+[term1]    sys	0m 0.03s
+[term1]    *ks_serial
+[term1]    real	7m 43.15s
+[term1]    user	7m 43.13s
+[term1]    sys	0m 0.01s
+[term1]    *ks_serial
+[term1]    real	7m 42.66s
+[term1]    user	7m 42.62s
+[term1]    sys	0m 0.03s
+[term1]    *ks_serial
+[term1]    real	7m 42.78s
+[term1]    user	7m 42.75s
+[term1]    sys	0m 0.02s
+[term1]    *otter_serial
+[term1]    
+[term1]    -- HEY root, WE HAVE A PROOF!! -- 
+[term1]    
+[term1]    Search stopped by max_proofs option.
+[term1]    
+[term1]    Command exited with non-zero status 103
+[term1]    real	1h 4m 55s
+[term1]    user	1h 4m 44s
+[term1]    sys	0m 11.07s
+[term1]    *otter_serial
+[term1]    
+[term1]    -- HEY root, WE HAVE A PROOF!! -- 
+[term1]    
+[term1]    Search stopped by max_proofs option.
+[term1]    
+[term1]    Command exited with non-zero status 103
+[term1]    real	1h 5m 12s
+[term1]    user	1h 2m 26s
+[term1]    sys	2m 43.66s
+[term1]    *otter_serial
+[term1]    
+[term1]    -- HEY root, WE HAVE A PROOF!! -- 
+[term1]    
+[term1]    Search stopped by max_proofs option.
+[term1]    
+[term1]    Command exited with non-zero status 103
+[term1]    real	1h 5m 06s
+[term1]    user	1h 2m 18s
+[term1]    sys	2m 46.04s
+[term1]    *otter_serial
+[term1]    
+[term1]    -- HEY root, WE HAVE A PROOF!! -- 
+[term1]    
+[term1]    Search stopped by max_proofs option.
+[term1]    
+[term1]    Command exited with non-zero status 103
+[term1]    real	1h 4m 50s
+[term1]    user	1h 4m 37s
+[term1]    sys	0m 13.03s
+[term1]    *otter_serial
+[term1]    
+[term1]    -- HEY root, WE HAVE A PROOF!! -- 
+[term1]    
+[term1]    Search stopped by max_proofs option.
+[term1]    
+[term1]    Command exited with non-zero status 103
+[term1]    real	1h 4m 35s
+[term1]    user	1h 4m 21s
+[term1]    sys	0m 13.28s
+[term1]    END DATA
+[term1]    / # 
+[usr1]     
+[usr1]     CPU 0:  Power down mode
+[usr1]     CPU 1:  Power down mode
+[usr1]     CPU 2:  Power down mode
+[usr1]     CPU 3:  Power down mode
+[usr1]     
